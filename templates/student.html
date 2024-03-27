@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block title %}
+Add New Student
+{% endblock %}
+{% block content %}
+<!-- <div>
+    <div>
+        <form action="{{ url_for('addrec') }}" method="POST">
+            <h3>Please Add the New Student Information:</h3>
+
+            <label for="nm">Name : </label>
+            <input type="text" name="nm" />
+
+            <label for="add">Address : </label>
+            <textarea name="add"></textarea>
+
+            <label for="city">City : </label>
+            <input type="text" name="city" />
+
+            <label for="zip">Zip Code : </label>
+            <input type="text" name="zip" />
+
+
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</div> -->
+
+
+<div>
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+            <h2 class="formbold-mb-5">Please Add the New Student Information:</h2>
+            <hr>
+            <form action="{{ url_for('addrec') }}" method="POST">
+                <div class="formbold-mb-5">
+                    <label for="nm" class="formbold-form-label"> Full Name </label>
+                    <input type="text" name="nm" placeholder="Full Name" class="formbold-form-input" />
+                </div>
+                <div class="formbold-mb-5">
+                    <label for="add" class="formbold-form-label"> Address </label>
+                    <input type="text" name="add"  placeholder="Enter your address number"
+                        class="formbold-form-input" />
+                </div>
+                <div class="formbold-mb-5">
+                    <label for="city" class="formbold-form-label"> City </label>
+                    <input type="city" name="city"  placeholder="Enter your city"
+                        class="formbold-form-input" />
+                </div>
+                <div class="formbold-mb-5">
+                    <label for="zip" class="formbold-form-label"> Zip Code </label>
+                    <input type="zip" name="zip"  placeholder="Enter your zip code"
+                        class="formbold-form-input" />
+                </div>
+
+
+                <!-- <div class="formbold-mb-5">
+                    <label for="date" class="formbold-form-label"> Date </label>
+                    <input type="date" name="date" id="date" class="formbold-form-input" />
+                </div> -->
+
+                <!-- <div class="formbold-mb-5 formbold-pt-3">
+                    <label class="formbold-form-label formbold-form-label-2">
+                        Address Details
+                    </label>
+                    <div class="formbold-mb-5">
+                        <input type="text" name="area" id="area" placeholder="Enter Address"
+                            class="formbold-form-input" />
+                    </div>
+                </div> -->
+
+                <div>
+                    <button class="formbold-btn" type="submit">Add To Database</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
